@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem "paperclip"
 
+gem 'sorcery'
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
