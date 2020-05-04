@@ -1,3 +1,4 @@
+
 # Blog App
 
 The app lets a user create, view and edit blogs. It also allows authenticated users to comment on the blogs.
@@ -47,5 +48,3 @@ Give a ⭐️ if you like this project!
 - Microverse
 - The Odin Project
 - Jumpstart Lab
-
-
