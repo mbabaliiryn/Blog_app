@@ -2,7 +2,7 @@
 
 The app lets a user create, view and edit blogs. It also allows authenticated users to comment on the blogs.
 
-![code3](https://user-images.githubusercontent.com/48393059/80974246-209a2e00-8e29-11ea-99a1-9673e06e6365.png)
+![code3](https://user-images.githubusercontent.com/48393059/80976235-dc5c5d00-8e2b-11ea-8b7e-9dc23167eb9b.png)
 
 # Build with
 
