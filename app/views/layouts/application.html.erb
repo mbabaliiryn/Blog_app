@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlogApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="container">
+  <div class="sidebar">
+<ul>
+<li><%= link_to "Create a New Article", new_article_path, class: "new_article" %></li>
+<li><%= link_to "View Articles", articles_path, class: "new_article" %></li>
+<li><%= link_to "Profile", "/authors", class: "new_article" %></li>
+<li>
+      <% if logged_in? %>
+          <%= link_to "(logout)", logout_path, class: "new_article" %>
+        <% else %>
+          <%= link_to "(login)", login_path, class: "new_article" %>
+      <% end %>
+</li>
+</ul>
+</div>
+    <div id="content">
+      <%= yield %>
+      <hr>
+      <h6>
+        <% if logged_in? %>
+          <%= "Logged in as #{current_user.email}" %>
+        <% else %>
+        <% end %>
+      </h6>
+    </div>
+  </div>
+  </body>
+</html>
